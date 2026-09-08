@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-return {"message": get_message()}
+    return {"msg": get_message()}
 
 if __name__ == "__main__":
     app.run(port=5000)
